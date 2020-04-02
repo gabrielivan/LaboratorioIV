@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { BienvenidaComponent } from './componentes/bienvenida/bienvenida.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { ErrorComponent } from './componentes/error/error.component';
+import { HomeComponent } from './componentes/home/home.component';
  
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ErrorComponent } from './componentes/error/error.component';
     BienvenidaComponent,
     LoginComponent,
     ErrorComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
