@@ -1,0 +1,11 @@
+<p>Primera condicion</p>
+<!-- <h1 *ngIf="expression">Blanco (ngIf)</h1>
+<h1 [hidden]="expression">Negro (Hidden)</h1> -->
+
+<p *ngFor="let item of lista">
+  <span>Nombre: {{item.name}}</span>
+  <br>
+  <span>Perfil: {{item.perfil}}</span>
+</p>
+
+<button type="button" name="button" (click)="OcultarMostrar()">Mostrar</button>
