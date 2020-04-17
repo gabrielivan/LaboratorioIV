@@ -1,0 +1,18 @@
+<div id="content" >
+    <article  class="post clearfix">
+      <header  >
+        <h1 class="post-title"><a href="#">Listado de Productos</a></h1>
+        <p class="post-meta"><time class="post-date" datetime="2020-04" pubdate>2020</time> <em>en</em> <a href="#">UTN FRA</a></p>
+      </header>
+      <hr>
+      <div id="principal">
+          <app-lista [listadoProductos]="ListadoProductosPrincipal"></app-lista>    
+      </div>    
+    </article>
+</div>
+<section class="widget clearfix" >
+    <h4 class="widgettitle">Alta </h4>
+      <div id="informe">
+        <app-producto (SeCreoUnProducto)="mostrarProducto($event)"></app-producto>
+      </div>
+  </section>
