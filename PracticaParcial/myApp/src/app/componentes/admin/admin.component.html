@@ -20,8 +20,9 @@
   </section>
   <hr>
   <section class="widget clearfix" >
-    <h4 class="widgettitle">Detalle </h4>
+    <h3 class="widgettitle">Detalle </h3>
       <div class="informe">
-          <app-mostrar [unProducto]="productoSeleccionado"></app-mostrar>
+          <app-mostrar [unProducto]="productoSeleccionado"
+          (lanzarProductoSeleccionado)="borrarProductoSeleccionado($event)"></app-mostrar>
         </div>
   </section>

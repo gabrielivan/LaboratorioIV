@@ -20,7 +20,7 @@
                 <p class="card-text">Fecha de vencimiento: {{unProducto.FechaDeVencimiento | date}}</p>
                 <p class="card-text">Ruta de Foto: {{unProducto.RutaDeFoto}}</p>
                 <p class="card-text">Tipo: {{unProducto.Tipo}}</p>
-                <button class="btn btn-md btn-danger">Borrar</button>
+                <button (click)="emitir(unProducto)" class="btn btn-md btn-danger">Borrar</button>
               </div>
             </div>
         </div>

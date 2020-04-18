@@ -32,4 +32,12 @@ export class AdminComponent implements OnInit {
   {
     this.productoSeleccionado = NuevoProducto;   
   }
+
+  borrarProductoSeleccionado(productoABorrar: Producto)
+  {
+    const index = this.ListadoProductosPrincipal.indexOf(productoABorrar, 0);
+    if (index > -1) {
+      this.ListadoProductosPrincipal.splice(index, 1);
+    }
+  }
 }
