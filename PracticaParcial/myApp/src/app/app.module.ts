@@ -8,6 +8,7 @@ import { BotonComponent } from './componentes/boton/boton.component';
 import { ListaComponent } from './componentes/lista/lista.component';
 import { AdminComponent } from './componentes/admin/admin.component';
 import { ProductoComponent } from './componentes/producto/producto.component';
+import { MostrarComponent } from './componentes/mostrar/mostrar.component';
  
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ProductoComponent } from './componentes/producto/producto.component';
     ListaComponent,
     AdminComponent,
     ProductoComponent,
+    MostrarComponent,
   ],
   imports: [
     BrowserModule,

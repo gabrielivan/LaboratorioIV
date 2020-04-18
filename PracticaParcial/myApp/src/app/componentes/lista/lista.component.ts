@@ -10,8 +10,15 @@ import { Producto } from '../../clases/Producto';
 export class ListaComponent implements OnInit {
 
   @Input() listadoProductos: Producto[] ;
+  @Output() productoSeleccionado: EventEmitter<any>= new EventEmitter<any>(); 
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  mostrarDetalles(producto: Producto)
+  {
+    this.productoSeleccionado.emit(producto);
   }
 }
