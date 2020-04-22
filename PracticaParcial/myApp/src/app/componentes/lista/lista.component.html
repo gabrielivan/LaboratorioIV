@@ -19,7 +19,7 @@
         <td>{{producto.FechaDeVencimiento | date}}</td>
         <td>{{producto.RutaDeFoto}}</td>
         <td>{{producto.Tipo}}</td>
-        <td app-boton [producto]="producto" (productoSeleccionado)="mostrarDetalles($event)"></td>
+        <td app-boton [producto]="producto" (productoSeleccionado)="borrar($event)"></td>
       </tr>
      
     </tbody>

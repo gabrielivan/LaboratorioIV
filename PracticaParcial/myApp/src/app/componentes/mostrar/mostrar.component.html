@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-sm-3">
       <div *ngIf="!unProducto">
-          <h3> Seleccione un Producto </h3>
+          <h3> Busque un Producto </h3>
         </div>
     </div>
   </div>
@@ -20,7 +20,6 @@
                 <p class="card-text">Fecha de vencimiento: {{unProducto.FechaDeVencimiento | date}}</p>
                 <p class="card-text">Ruta de Foto: {{unProducto.RutaDeFoto}}</p>
                 <p class="card-text">Tipo: {{unProducto.Tipo}}</p>
-                <button (click)="emitir(unProducto)" class="btn btn-md btn-danger">Borrar</button>
               </div>
             </div>
         </div>

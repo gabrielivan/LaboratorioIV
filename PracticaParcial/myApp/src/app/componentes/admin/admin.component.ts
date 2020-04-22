@@ -9,7 +9,7 @@ import { Producto } from './../../clases/Producto';
 export class AdminComponent implements OnInit {
 
   ListadoProductosPrincipal: Producto[];
-  productoSeleccionado: Producto;
+  productoEncontrado: Producto;
 
   constructor() { 
     this.ListadoProductosPrincipal= [
@@ -30,7 +30,7 @@ export class AdminComponent implements OnInit {
 
   tomarProductoParaDetalles(NuevoProducto: Producto)
   {
-    this.productoSeleccionado = NuevoProducto;   
+    this.productoEncontrado = NuevoProducto;   
   }
 
   borrarProductoSeleccionado(productoABorrar: Producto)

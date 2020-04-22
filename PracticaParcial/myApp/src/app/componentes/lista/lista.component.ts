@@ -17,7 +17,7 @@ export class ListaComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  mostrarDetalles(producto: Producto)
+  borrar(producto: Producto)
   {
     this.productoSeleccionado.emit(producto);
   }

@@ -9,6 +9,7 @@ import { ListaComponent } from './componentes/lista/lista.component';
 import { AdminComponent } from './componentes/admin/admin.component';
 import { ProductoComponent } from './componentes/producto/producto.component';
 import { MostrarComponent } from './componentes/mostrar/mostrar.component';
+import { BuscadorComponent } from './componentes/buscador/buscador.component';
  
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { MostrarComponent } from './componentes/mostrar/mostrar.component';
     AdminComponent,
     ProductoComponent,
     MostrarComponent,
+    BuscadorComponent,
   ],
   imports: [
     BrowserModule,
