@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { AdminPeliculasComponent } from './componentes/admin-peliculas/admin-peliculas.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ServicioPeliculasService } from './servicios/servicio-peliculas.service';
  
 @NgModule({
   declarations: [
@@ -14,9 +16,10 @@ import { AdminPeliculasComponent } from './componentes/admin-peliculas/admin-pel
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ServicioPeliculasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

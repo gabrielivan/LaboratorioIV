@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServicioPeliculasService } from 'src/app/servicios/servicio-peliculas.service';
 
 @Component({
   selector: 'app-admin-peliculas',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminPeliculasComponent implements OnInit {
 
-  constructor() { }
+  constructor(private servicioPelicula: ServicioPeliculasService) { }
 
   ngOnInit(): void {
+    this.servicioPelicula.obtenerPeliculas().subscribe(resultado => {
+      console.log(resultado);
+    }, error => {
+      console.log('Error, no se pudo obtener las peliculas.');
+    });
   }
 
 }
