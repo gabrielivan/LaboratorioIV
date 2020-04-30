@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>FechaDeEstreno</th>
+        <th>CantidadDePublico</th>
+        <th>FotoDeLaPelicula</th>
+        <th>Tipo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let pelicula of listadoPeliculas">
+        <td>{{pelicula.Id}}</td>
+        <td>{{pelicula.Nombre}}</td>
+        <td>{{pelicula.FechaDeEstreno}}</td>
+        <td>{{pelicula.CantidadDePublico}}</td>
+        <td>{{pelicula.FotoDeLaPelicula}}</td>
+        <td>{{pelicula.Tipo}}</td>
+      </tr>
+     
+    </tbody>
+  </table>
