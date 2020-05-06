@@ -1,1 +1,21 @@
-<p>pelicula-listado works!</p>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<div id="content">
+  <article class="post clearfix">
+    <header>
+      <h1 class="post-title"><a href="#">Listado de Peliculas</a></h1>
+    </header>
+    <hr>
+    <div id="principal">
+      <app-tabla-pelicula [listadoPeliculas]="listadoPeliculas" (peliculaSeleccionada)="obtenerPelicula($event)">
+      </app-tabla-pelicula>
+    </div>
+  </article>
+  <hr>
+  <section *ngIf="peliculaObtenida" class="widget clearfix">
+    <h3 class="widgettitle">Detalle de la Pelicula </h3>
+    <div class="informe">
+      <app-detalle-pelicula [unaPelicula]="peliculaObtenida"
+         (peliculaBorrar)="borrar($event)"></app-detalle-pelicula>
+    </div>
+  </section>
+</div>

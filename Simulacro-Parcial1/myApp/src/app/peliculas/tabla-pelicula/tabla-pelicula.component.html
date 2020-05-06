@@ -11,7 +11,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let pelicula of listadoPeliculas">
+      <tr (click)="emitir(pelicula)" *ngFor="let pelicula of listadoPeliculas">
         <td>{{pelicula.Id}}</td>
         <td>{{pelicula.Nombre}}</td>
         <td>{{pelicula.FechaDeEstreno}}</td>

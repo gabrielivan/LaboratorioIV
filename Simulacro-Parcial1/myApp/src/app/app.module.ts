@@ -10,6 +10,7 @@ import { ActorAltaComponent } from './actor/alta/actor-alta/actor-alta.component
 import { PeliculaListadoComponent } from './peliculas/listado/pelicula-listado/pelicula-listado.component';
 import { TablaPeliculaComponent } from './peliculas/tabla-pelicula/tabla-pelicula.component';
 import { BienvenidoComponent } from './bienvenido/bienvenido/bienvenido.component';
+import { DetallePeliculaComponent } from './peliculas/detalle-pelicula/detalle-pelicula.component';
 
 
  
@@ -22,6 +23,7 @@ import { BienvenidoComponent } from './bienvenido/bienvenido/bienvenido.componen
     PeliculaListadoComponent,
     TablaPeliculaComponent,
     BienvenidoComponent,
+    DetallePeliculaComponent,
   ],
   imports: [
     BrowserModule,

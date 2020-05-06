@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BienvenidoComponent } from './bienvenido/bienvenido/bienvenido.component';
-import { TablaPeliculaComponent } from './peliculas/tabla-pelicula/tabla-pelicula.component';
+import { PeliculaListadoComponent } from './peliculas/listado/pelicula-listado/pelicula-listado.component';
 
 
 const routes: Routes = [
   {path:"", component: BienvenidoComponent},
-  {path: 'tabla-pelicula' , component: TablaPeliculaComponent}
+  {path: 'pelicula-listado' , component: PeliculaListadoComponent}
 ];
 
 @NgModule({

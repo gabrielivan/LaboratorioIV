@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<div class="container">
+  <!-- <div class="row">
+    <div class="col-sm-3">
+      <div *ngIf="!unProducto">
+          <h3> Busque un Producto </h3>
+        </div>
+    </div>
+  </div> -->
+    
+  <div class="row">
+      <div class="col-sm-9">
+        <div class="detalleContainer" *ngIf="unaPelicula">
+          <h3>{{unaPelicula.Nombre}} </h3>
+        
+          <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Id da la pelicula: {{unaPelicula.Id}}</h4>
+                <p class="card-text">Fecha de estreno: {{unaPelicula.FechaDeEstreno}}</p>
+                <p class="card-text">Cantidad de publico: {{unaPelicula.CantidadDePublico}}</p>
+                <p class="card-text">Tipo de la pelicula: {{unaPelicula.Tipo}}</p>
+                <p class="card-text"><img src="{{unaPelicula.FotoDeLaPelicula}}"/></p>
+              </div>
+            </div>
+            <button class="btn btn-sm btn-danger borrar" (click)="emitir()">Borrar</button>
+        </div>
+    </div>
+  </div>
+</div>
