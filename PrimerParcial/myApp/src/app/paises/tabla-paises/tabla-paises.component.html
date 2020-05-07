@@ -1,24 +1,24 @@
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <table class="table table-striped">
     <thead>
       <tr>
-        <th>Id</th>
         <th>Nombre</th>
-        <th>FechaDeEstreno</th>
-        <th>CantidadDePublico</th>
-        <th>FotoDeLaPelicula</th>
-        <th>Tipo</th>
+        <th>Capital</th>
+        <th>Region</th>
+        <th>Subregion</th>
+        <th>Poblacion</th>
+        <th>Bandera</th>
       </tr>
     </thead>
     <tbody>
-      <tr (click)="emitir(pelicula)" *ngFor="let pelicula of listadoPeliculas">
-        <td>{{pelicula.Id}}</td>
-        <td>{{pelicula.Nombre}}</td>
-        <td>{{pelicula.FechaDeEstreno}}</td>
-        <td>{{pelicula.CantidadDePublico}}</td>
-        <td><img src="{{pelicula.FotoDeLaPelicula}}"/></td>
-        <td>{{pelicula.Tipo}}</td>
+      <tr (click)="emitir(pais)" *ngFor="let pais of listadoPaises">
+        <td>{{pais.Name}}</td>
+        <td>{{pais.Capital}}</td>
+        <td>{{pais.Region}}</td>
+        <td>{{pais.Subregion}}</td>
+        <td>{{pais.Population}}</td>
+        <td><img style="width: 100px" src="{{pais.Flag}}"/></td>
       </tr>
      
     </tbody>
-  </table> -->
+  </table>

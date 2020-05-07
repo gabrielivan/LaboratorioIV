@@ -9,14 +9,14 @@ import { Pais } from 'src/app/clases/pais';
 export class TablaPaisesComponent implements OnInit {
 
   @Input() listadoPaises: Pais[] ;
-  // @Output() paisSeleccionado: EventEmitter<any>= new EventEmitter<any>(); 
+  @Output() paisSeleccionado: EventEmitter<any>= new EventEmitter<any>(); 
 
   constructor() { }
 
-  // emitir(pais: Pais)
-  // {
-  //   this.paisSeleccionado.emit(pais);
-  // }
+  emitir(pais: Pais)
+  {
+    this.paisSeleccionado.emit(pais);
+  }
 
   ngOnInit(): void {
 

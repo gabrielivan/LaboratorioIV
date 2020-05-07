@@ -17,6 +17,11 @@ export class PaisesListadoComponent implements OnInit {
   ngOnInit(): void {
     this.paisesService.obtenerPaises().subscribe(resultado => {
       console.log(resultado);
+      var array = resultado as Array<any>;
+      this.listadoPaises = array.map(function(x){
+        return new Pais(x.name, x.capital, x.flag, x.population, x.region, x.subregion);
+      });
+      console.log(this.listadoPaises);
     }, error => {
       console.log('Error');
     });
@@ -32,8 +37,8 @@ export class PaisesListadoComponent implements OnInit {
   //   }
   // }
 
-  // obtenerPais(pais){
-  //   this.paisObtenido = pais;
-  // }
+  obtenerPais(pais){
+    this.paisObtenido = pais;
+  }
 
 }

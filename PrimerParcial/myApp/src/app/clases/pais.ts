@@ -1,19 +1,20 @@
 export class Pais {
+    
+    Name : string;
+    Capital : string;
+    Flag : string;
+    Population : number;
+    Region : string;
+    Subregion : string;
 
-    Id : number;
-    Nombre : string;
-    // Apellido : string;
-    // Sexo : number;
-    // FechaDeNacimiento: string;
-    // Foto : string;
-    // PaisDeOrigen: string;
-  
-    // public constructor(id: number, nombre: string, apellido: string, sexo: string, fechaDeNacimiento: string, foto: string, paisDeOrigen: string) { 
-  
-    // }
 
-    public constructor(id: number, nombre: string) { 
-  
+    public constructor(name: string, capital: string, flag: string, population: number, region: string, subregion: string) { 
+        this.Name = name;
+        this.Capital = capital;
+        this.Flag = flag;
+        this.Population = population;
+        this.Region = region;
+        this.Subregion = subregion;
     }
     
 }
