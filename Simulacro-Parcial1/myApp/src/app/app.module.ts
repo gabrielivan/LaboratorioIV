@@ -11,6 +11,7 @@ import { PeliculaListadoComponent } from './peliculas/listado/pelicula-listado/p
 import { TablaPeliculaComponent } from './peliculas/tabla-pelicula/tabla-pelicula.component';
 import { BienvenidoComponent } from './bienvenido/bienvenido/bienvenido.component';
 import { DetallePeliculaComponent } from './peliculas/detalle-pelicula/detalle-pelicula.component';
+import { TablaActorComponent } from './actor/tabla-actor/tabla-actor.component';
 
 
  
@@ -24,6 +25,7 @@ import { DetallePeliculaComponent } from './peliculas/detalle-pelicula/detalle-p
     TablaPeliculaComponent,
     BienvenidoComponent,
     DetallePeliculaComponent,
+    TablaActorComponent,
   ],
   imports: [
     BrowserModule,
