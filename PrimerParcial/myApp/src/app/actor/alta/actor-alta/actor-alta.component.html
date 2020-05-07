@@ -1,1 +1,48 @@
-<p>actor-alta works!</p>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <div *ngIf="!nuevoActor">
+                <button class="btn btn-lg btn-warning btn-block" (click)="hacerNuevoActor()">Nuevo </button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="productoContainer" *ngIf="nuevoActor">
+            <div>
+                <label>Nombre:
+                    <input [(ngModel)]="nuevoActor.Nombre" placeholder="Nombre">
+                </label>
+            </div>
+            <div>
+                <label>Apellido:
+                    <input [(ngModel)]="nuevoActor.Apellido" placeholder="Apellido">
+                </label>
+            </div>
+            <div>
+                <label>Sexo:
+                    <input [(ngModel)]="nuevoActor.Sexo" placeholder="Sexo">
+                </label>
+            </div>
+            <div>
+                <label>FechaDeNacimiento:
+                    <input [(ngModel)]="nuevoActor.FechaDeNacimiento" placeholder="FechaDeNacimiento">
+                </label>
+            </div>
+            <div>
+                <label>Foto:
+                    <input [(ngModel)]="nuevoActor.Foto" placeholder="Foto">
+                </label>
+            </div>
+            <div>
+                <label>PaisDeOrigen:
+                    <input [(ngModel)]="nuevoActor.PaisDeOrigen" placeholder="PaisDeOrigen">
+                </label>
+            </div>
+            <div>
+            </div>
+
+            <button class="btn btn-lg btn-success btn-block" (click)="crearActor()">Crear Actor</button>
+        </div>
+    </div>
+</div>
