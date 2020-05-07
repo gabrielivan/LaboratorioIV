@@ -28,14 +28,13 @@ export class PaisesListadoComponent implements OnInit {
 
   }
 
-
-  // borrar(pais: Pais)
-  // {
-  //   const index = this.listadoPaises.indexOf(pais, 0);
-  //   if (index > -1) {
-  //     this.listadoPaises.splice(index, 1);
-  //   }
-  // }
+  deshabilitar(pais: Pais)
+  {
+    const index = this.listadoPaises.indexOf(pais, 0);
+    if (index > -1) {
+      this.listadoPaises.splice(index, 1);
+    }
+  }
 
   obtenerPais(pais){
     this.paisObtenido = pais;

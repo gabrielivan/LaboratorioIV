@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<div class="container">
+
+  <div class="row">
+      <div class="col-sm-9">
+        <div class="detalleContainer" *ngIf="unPais">
+          <h3>{{unPais.Name}} </h3>
+        
+          <div class="card">
+              <div class="card-body">
+                <p class="card-text">Capital: {{unPais.Capital}}</p>
+                <p class="card-text">Region: {{unPais.Region}}</p>
+                <p class="card-text">Subregion: {{unPais.Subregion}}</p>
+                <p class="card-text">Poblacion: {{unPais.Population}}</p>
+                <p class="card-text"><img style="width: 100px;" src="{{unPais.Flag}}"/></p>
+              </div>
+            </div>
+            <button class="btn btn-sm btn-danger borrar" (click)="emitir()">Deshabilitar</button>
+        </div>
+    </div>
+  </div>
+</div>

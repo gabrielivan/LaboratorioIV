@@ -10,4 +10,12 @@
       </app-tabla-paises>
     </div>
   </article>
+  <hr>
+  <section *ngIf="paisObtenido" class="widget clearfix">
+    <h3 class="widgettitle">Detalle del Pais </h3>
+    <div class="informe">
+      <app-detalle-pais [unPais]="paisObtenido"
+         (pasiDeshabilitar)="deshabilitar($event)"></app-detalle-pais>
+    </div>
+  </section>
 </div>
