@@ -1,1 +1,24 @@
-<p>actor-listado works!</p>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Sexo</th>
+        <th>FechaDeNacimiento</th>
+        <th>PaisDeOrigen</th>
+        <th>Foto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr (click)="emitir(actor)" *ngFor="let actor of listadoActores">
+        <td>{{actor.Nombre}}</td>
+        <td>{{actor.Apellido}}</td>
+        <td>{{actor.Sexo}}</td>
+        <td>{{actor.FechaDeNacimiento}}</td>
+        <td>{{actor.PaisDeOrigen}}</td>
+        <td><img style="width: 100px" src="{{actor.Foto}}"/></td>
+      </tr>
+     
+    </tbody>
+  </table>

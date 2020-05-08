@@ -1,3 +1,5 @@
+import { Pais } from './pais';
+
 export class Actor {
 
     Id : number;
@@ -6,9 +8,10 @@ export class Actor {
     Sexo : number;
     FechaDeNacimiento: string;
     Foto : string;
-    PaisDeOrigen: string;
+    PaisDeOrigen : string;
+    Pais: Pais;
   
-    public constructor(id: number, nombre: string, apellido: string, sexo: string, fechaDeNacimiento: string, foto: string, paisDeOrigen: string) { 
+    public constructor(id: number, nombre: string, apellido: string, sexo: string, fechaDeNacimiento: string, foto: string, paisDeOrigen:string) { 
   
     }
     

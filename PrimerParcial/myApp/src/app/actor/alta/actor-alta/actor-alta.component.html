@@ -1,4 +1,23 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<div id="content">
+  <article class="post clearfix">
+    <hr>
+    <div id="principal">
+      <app-tabla-paises [listadoPaises]="listadoPaises" (paisSeleccionado)="obtenerPais($event)">
+      </app-tabla-paises>
+    </div>
+  </article>
+  <hr>
+  <section *ngIf="paisObtenido" class="widget clearfix">
+    <h3 class="widgettitle">Detalle del Pais </h3>
+    <div class="informe">
+      <app-detalle-pais [unPais]="paisObtenido"></app-detalle-pais>
+    </div>
+  </section>
+</div>
+
 <div class="container">
     <div class="row">
         <div class="col-sm-3">
@@ -30,13 +49,8 @@
                 </label>
             </div>
             <div>
-                <label>Foto:
-                    <input [(ngModel)]="nuevoActor.Foto" placeholder="Foto">
-                </label>
-            </div>
-            <div>
                 <label>PaisDeOrigen:
-                    <input [(ngModel)]="nuevoActor.PaisDeOrigen" placeholder="PaisDeOrigen">
+                    <input value={{paisObtenido.Name}} [(ngModel)]="nuevoActor.PaisDeOrigen" placeholder="PaisDeOrigen">
                 </label>
             </div>
             <div>
